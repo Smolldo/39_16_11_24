@@ -111,13 +111,37 @@ animals = {
 
 import random
 
-ani, descr = random.choice(list(animals.items()))
+# ani, descr = random.choice(list(animals.items()))
 
-print(descr)
+# print(descr)
 
-inp = input('Enter zdohadku: ')
+# inp = input('Enter zdohadku: ')
 
-if ani == inp:
-    print('Ви вгадали')
-else:
-    print('ви не вгадали')
+# if ani == inp:
+#     print('Ви вгадали')
+# else:
+#     print('ви не вгадали')
+
+# Напишіть програму, яка приймає від користувача список з імен та оцінок, та обчислює 
+# середній бал для кожного учня. Результат виводиться у вигляді словника, де ключ — ім'я учня, а значення — середній бал.
+
+def average(scores):
+    return round(sum(scores) / len(scores))
+
+
+students = {}
+
+print('Enter name then scores')
+
+while True:
+    stud = input('Enter data: ')
+    if not stud:
+        break
+
+    data = stud.split()
+    name = data[0]
+    scores = [int(score) for score in data[1:]]
+
+    students[name] = average(scores)
+
+print(students)

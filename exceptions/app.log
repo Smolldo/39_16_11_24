@@ -1,0 +1,12 @@
+2025-03-02 11:03:32,262 - ERROR - Error catched: unsupported operand type(s) for /: 'int' and 'str'
+Traceback (most recent call last):
+  File "d:\programming\PYTHON_39_16_11_24\exceptions\exceptions2.py", line 90, in division
+    return a / b
+           ~~^~~
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+2025-03-02 11:04:16,954 - ERROR - Error catched: division by zero
+Traceback (most recent call last):
+  File "d:\programming\PYTHON_39_16_11_24\exceptions\exceptions2.py", line 90, in division
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
